@@ -1,23 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Match from './Match.js'
 
-function Match(props) {
-  let result
-  if(props.score1 === props.score2) {
-    result = "Egalité"
-  } else if(props.score1 > props.score2) {
-    result = "Victoire " + props.team1
-  } else {
-    result = "Victoire " + props.team2
-  }
-  return (
-    <>
-      <Text>{props.team1} {props.score1} - {props.score2} {props.team2}</Text>
-      <Text>{result}</Text>
-    </>
-  )
-}
 
 export default function App() {
   let matches = [
