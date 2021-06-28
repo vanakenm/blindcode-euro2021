@@ -65,14 +65,6 @@ Que fait cet opérateur ? A partir d'un objet avec plusieurs propriété il cré
   <Match {...match} />
 ```
 
-## Fichiers séparés
-
-Il est possible (et recommandé) d'écrire chaque composant dans un fichier distinct. Mon approche est de toujours commencer dans un seul fichier, puis d'extraire le composant quand il fonctionne - n'essayer jamais de transformer du code avant qu'il ne fonctionne (il vous sera impossible de savoir si l'erreur est celle initiale ou du à l'extraction).
-
-Couper/coller simplement le composant dans un nouveau fichier avec le même nom que le composant (.js). Il faudra sans doute ajouter quelques imports (React, composants utilisés).
-
-Il faut après l'importer correctement dans le fichier initial.
-
 Ceci est totalement équivalent à:
 
 ```JavaScript
@@ -82,3 +74,12 @@ Ceci est totalement équivalent à:
 ```
 
 C'est à la fois plus court et potentiellement plus opaque donc à utiliser avec précaution
+
+## Fichiers séparés
+
+Il est possible (et recommandé) d'écrire chaque composant dans un fichier distinct. Mon approche est de toujours commencer dans un seul fichier, puis d'extraire le composant quand il fonctionne - n'essayer jamais de transformer du code avant qu'il ne fonctionne (il vous sera impossible de savoir si l'erreur est celle initiale ou du à l'extraction).
+
+Couper/coller simplement le composant dans un nouveau fichier avec le même nom que le composant (.js). Il faudra sans doute ajouter quelques imports (React, composants utilisés).
+
+Il faut après l'importer correctement dans le fichier initial.
+
